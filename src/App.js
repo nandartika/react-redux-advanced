@@ -10,7 +10,7 @@ function App() {
   const cart = useSelector((state) => state.cart);
 
   useEffect(() => {
-    fetch("https://my-json-server.typicode.com/nandartika/typecode/products", {
+    fetch("https://mockend.com/nandartika/typecode/products", {
       method: "POST",
       body: JSON.stringify(cart),
     });
